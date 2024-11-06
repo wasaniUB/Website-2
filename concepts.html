@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FoC</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Darker initial background and styling adjustments */
+    body {
+      background-color: #111; /* Darker black */
+      font-family: Arial, sans-serif;
+      color: #f1f1f1;
+      transition: background-color 1s ease; /* Smooth transition */
+    }
+
+    header {
+      text-align: center;
+      color: #f1f1f1;
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
+
+    nav ul li a {
+      color: #f1f1f1;
+      background: none; /* Remove any default background */
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+
+    /* Highlight effect on hover */
+    nav ul li a:hover {
+      color: #ffcc00; /* Highlight color */
+    }
+
+    article {
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: #f1f1f1;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2><b>Fundamentals of Computing</b></h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><h5><a href="index.html">Course</a></h5></li>
+      <li><h5><a href="project.html">Project</a></h5></li>
+      <li><h5><a href="concepts.html">Concepts</a></h5></li>
+      <li><h5><a href="database.html">Databases</a></h5></li>
+      <li><h5><a href="documentation.html">Documentation</a></h5></li>
+      <li><h5><a href="aboutme.html">Dev Team</a></h5></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <center>
+      <a href="https://docs.google.com/presentation/d/1U9iXLG5U7AraTIjt5SQsIQRBqt_v-x6M59IeAXXUDR0/edit?usp=sharing">
+        <img src="concepts.PNG" alt="Concepts" width="515" height="290">
+      </a>
+      <p>Click on the image above for the presentation.</p>
+      <p><a href="https://drive.google.com/file/d/1MQ6RLFJ4ePxckq2uc3vrH9X65NVjI4kb/view?usp=sharing">Click here for the recording.</a></p>
+    </center>
+  </article>
+</section>
+
+<footer>
+  <p>@ Powered by UB</p>
+</footer>
+
+<script>
+  // JavaScript for constant background color transition between black and gray
+  const colors = ['#111', '#333']; // Dark shades of black and gray
+  let currentColor = 0;
+
+  setInterval(() => {
+    // Toggle the color between black and gray
+    document.body.style.backgroundColor = colors[currentColor];
+    currentColor = (currentColor + 1) % colors.length;
+  }, 3000); // Transition every 3 seconds
+</script>
+
+</body>
+</html>

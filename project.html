@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FoC - Fundamentals of Computing</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <!-- Custom CSS -->
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #111; /* Initial dark background */
+      color: #f1f1f1;
+      transition: background-color 1s ease; /* Smooth transition */
+    }
+
+    /* Header Styling */
+    .header {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    /* Navbar Styling */
+    nav ul.nav {
+      padding: 1rem;
+      border: none;
+      border-radius: 5px;
+      background: none; /* Remove background */
+    }
+
+    nav ul.nav li a {
+      font-size: 1.1rem;
+      color: #f1f1f1; /* Light text color */
+      text-decoration: none;
+      padding: 0.5rem 0;
+      display: block;
+      transition: color 0.3s ease;
+    }
+
+    nav ul.nav li a:hover, nav ul.nav li a.active {
+      color: #ffcc00; /* Highlight color */
+    }
+
+    /* Article Styling */
+    article h2 {
+      font-size: 2rem;
+      color: #f1f1f1;
+      margin-bottom: 1rem;
+    }
+
+    article p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    article ul.list-group li a {
+      font-size: 1.1rem;
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    article ul.list-group li a:hover {
+      color: #ffd700;
+    }
+
+    /* Footer Styling */
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 3rem;
+    }
+
+    .footer p {
+      margin: 0;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+
+      nav ul.nav {
+        padding: 0.5rem;
+      }
+
+      article h2 {
+        font-size: 1.75rem;
+      }
+
+      article ul.list-group li a {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header py-3">
+    <div class="container">
+      <h1 class="font-weight-bold">Fundamentals of Computing</h1>
+    </div>
+  </header>
+
+  <section class="main-section container mt-5">
+    <div class="row">
+      <nav class="col-md-3 mb-4">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="concepts.html">Concepts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="database.html">Databases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="documentation.html">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutme.html">Dev Team</a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="col-md-9">
+        <h2>Project</h2>
+        <p>The final project will consist of 4 sections. Each section has a deadline to complete. A complete description of the project can be found on the course moodle site. It will consist of launching a website built with HTML, CSS, and JavaScript, and hosted on GitHub. This site is a benchmark for the Final Project. See the Project Specification on the Moodle site.</p>
+
+        <ul class="list-group">
+          <li class="list-group-item"><a href="notgate.html">Project 1: NOT Gate</a></li>
+          <li class="list-group-item"><a href="andgate.html">Project 2: AND Gate</a></li>
+          <li class="list-group-item"><a href="easyand.html">Project 2: AND Gate - Easy Version</a></li>
+          <li class="list-group-item"><a href="binarytohex.html">Project 3: Binary to Hexadecimal Converter</a></li>
+          <li class="list-group-item"><a href="ascii.html">Project 4: ASCII Converter</a></li>
+          <li class="list-group-item"><a href="unicode.html">Project 4: UNICODE Converter</a></li>
+          <li class="list-group-item"><a href="MLinstructions.html">Project 5: Machine Language Instructions Converter</a></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; Powered by UB</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Constant Background Color Transition -->
+  <script>
+    const colors = ['#111', '#333']; // Dark shades
+    let currentColor = 0;
+
+    setInterval(() => {
+      document.body.style.backgroundColor = colors[currentColor];
+      currentColor = (currentColor + 1) % colors.length;
+    }, 3000); // Transition every 3 seconds
+  </script>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

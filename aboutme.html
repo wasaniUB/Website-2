@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FoC</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Keyframe for the background color transition */
+    @keyframes colorCycle {
+      0% { background-color: #003300; } /* Dark green */
+      50% { background-color: #b30000; } /* Dark red */
+      100% { background-color: #003300; } /* Back to dark green */
+    }
+
+    /* Body styling with continuous color transition */
+    body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #ccc;
+      animation: colorCycle 6s infinite ease-in-out;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      color: #f1f1f1;
+      margin-top: 20px;
+    }
+
+    .container {
+      padding: 80px 120px;
+      background-color: #004d00; /* Slightly lighter green for content */
+      border-radius: 8px;
+    }
+
+    .navbar {
+      font-family: Montserrat, sans-serif;
+      background-color: #b30000; /* Red background for navbar */
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .navbar li a, .navbar .navbar-brand { 
+      color: #f1f1f1 !important;
+    }
+
+    .navbar-nav li a:hover {
+      color: #fff !important;
+    }
+
+    .sidebar-nav {
+      font-size: 14px;
+      padding: 20px;
+      background-color: #b30000; /* Red background for sidebar */
+      height: 100%;
+      position: fixed;
+      width: 200px;
+      top: 0;
+      left: 0;
+      color: #f1f1f1;
+    }
+
+    .sidebar-nav a {
+      color: #f1f1f1;
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+    }
+
+    .sidebar-nav a:hover {
+      background-color: #ff4d4d; /* Slightly lighter red on hover */
+      color: #fff;
+    }
+
+    footer {
+      background-color: #b30000; /* Red background for footer */
+      color: #f5f5f5;
+      padding: 32px;
+      text-align: center;
+    }
+
+    footer p, footer a {
+      color: #f5f5f5;
+    }
+
+    footer a:hover {
+      color: #f5f5f5;
+      text-decoration: none;
+    }
+
+    .intro-text {
+      font-family: 'Georgia', serif;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #eee;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .content {
+      margin-left: 220px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2><b>Fundamentals of Computing</b></h2>
+</header>
+
+<div class="sidebar-nav">
+  <a href="index.html">Course</a>
+  <a href="project.html">Project</a>
+  <a href="concepts.html">Concepts</a>
+  <a href="database.html">Databases</a>
+  <a href="documentation.html">Documentation</a>
+  <a href="aboutme.html">Dev Team</a>
+</div>
+
+<div class="content">
+  <section>
+    <article class="container">
+      <h1>About Me</h1>
+      <p class="intro-text">
+        <img src="WC Profile.jpg" alt="Wasani Castillo" width="184" height="122" style="float:left; margin-right:50px">
+        My name is Wasani Castillo, and I am 16 years old. I'm currently in my first semester at the University of Belize. I was born on January 30, 2008 in Belmopan and attended United Evergreen Primary School starting in September of 2012 and graduating during the COVID-19 lockdown in June of 2020. I then attended Belmopan Methodist High School and served as the Head Boy Prefect of the school. I was top of my class in 3rd and 4th form and graduated 5th place in my graduating class. I chose to take Information Technology to immerse myself in the modern technology we use today and to also get a good job after graduating.
+      </p>
+      <p class="intro-text">Here is a link to my resume.</p>
+      <a href="<a href="https://wasaniub.github.io/resuboots.html/" class="btn btn-primary" target="_blank"> Resume </a>">Resume</a>
+      <p class="intro-text">And here is a link to my GitHub profile.</p>
+      <a href="<a href="https://github.com/wasaniUB" class="btn btn-primary" target="_blank">Github Profile</a>">GitHub</a>
+    </article>
+  </section>
+</div>
+
+<footer>
+  <p>@ Powered by UB</p>
+</footer>
+
+</body>
+</html>

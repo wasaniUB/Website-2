@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentals of Computing</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+  <!-- Inline CSS for Custom Styling -->
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #111; /* Dark background */
+      transition: background-color 1s ease; /* Smooth transition */
+      color: #f1f1f1;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    nav ul li {
+      padding: 10px 0;
+    }
+
+    nav ul li a {
+      color: #f1f1f1;
+      background: none; /* Remove any default background */
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00; /* Highlight color */
+    }
+
+    .article-container {
+      background: #222; /* Darker background for article */
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .article-container img {
+      max-width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .article-container img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 class="font-weight-bold">Fundamentals of Computing</h1>
+</header>
+
+<section class="container my-5">
+  <div class="row">
+    <nav class="col-md-3">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link h5" href="index.html">Course</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h5" href="project.html">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h5" href="concepts.html">Concepts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h5" href="database.html">Databases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h5" href="documentation.html">Documentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h5" href="aboutme.html">Dev Team</a>
+        </li>
+      </ul>
+    </nav>
+
+    <article class="col-md-9 article-container">
+      <a href="https://drive.google.com/file/d/1gL6zYcdEBFgzvh-4iPgwfkvESouDlsbX/view" target="_blank">
+        <img src="database.PNG" alt="Database presentation" class="img-fluid rounded">
+      </a>
+      <p class="mt-3">Click on the image above to view the presentation.</p>
+    </article>
+  </div>
+</section>
+
+<footer>
+  <p>Powered by UB</p>
+</footer>
+
+<script>
+  // JavaScript for constant background color transition between black and gray
+  const colors = ['#111', '#333']; // Dark shades of black and gray
+  let currentColor = 0;
+
+  setInterval(() => {
+    // Toggle the color between black and gray
+    document.body.style.backgroundColor = colors[currentColor];
+    currentColor = (currentColor + 1) % colors.length;
+  }, 3000); // Transition every 3 seconds
+</script>
+
+</body>
+</html>
+

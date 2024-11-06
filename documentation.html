@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FoC</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Base body style with gray background */
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background-color: #777;
+      transition: background-color 2s ease-in-out;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #555;
+      color: #f1f1f1;
+    }
+    header h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 0;
+    }
+    nav {
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #888;
+      color: #fff;
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    nav ul li a:hover {
+      color: #f1f1f1;
+    }
+    section {
+      padding: 20px;
+      background-color: #ccc;
+      border-radius: 5px;
+      margin: 20px auto;
+      max-width: 800px;
+    }
+    article p {
+      font-size: 18px;
+      color: #333;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #555;
+      color: #f1f1f1;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 5px;
+      transition: transform 0.5s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Fundamentals of Computing</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">Course</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="concepts.html">Concepts</a></li>
+      <li><a href="database.html">Databases</a></li>
+      <li><a href="documentation.html">Documentation</a></li>
+      <li><a href="aboutme.html">Dev Team</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <p>Click on this image for a presentation on CPUs</p>
+    <a href="https://docs.google.com/presentation/d/1fAMFkT4o0ipZznUQZUk9n_jgb4yR3SqU_dZ136scwH8/edit#slide=id.p"> <img src="small cpu.jfif" alt="CPU small">
+    </a>
+  </article>
+</section>
+
+<footer>
+  <p>@ Powered by UB</p>
+</footer>
+
+<!-- JavaScript for background transition effect -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.body.style.backgroundColor = "#333";
+  });
+</script>
+
+</body>
+</html>
